@@ -252,7 +252,7 @@
   #define HEATER_BED_PIN                    PD7   // Hotbed
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                           PB7   // Fan0
+  #define FAN_PIN                           PB6   // Fan1 NOTE: Fan0 and Fan1 are inverted because of a hardware malfunction
 #endif
 
 #if HAS_CUTTER
@@ -264,7 +264,7 @@
   #endif
 #else
   #ifndef FAN1_PIN
-    #define FAN1_PIN                        PB6   // Fan1
+    #define FAN1_PIN                        PB7   // Fan0 NOTE: Fan0 and Fan1 are inverted because of a hardware malfunction
   #endif
   #ifndef FAN2_PIN
     #define FAN2_PIN                        PB5   // Fan2
